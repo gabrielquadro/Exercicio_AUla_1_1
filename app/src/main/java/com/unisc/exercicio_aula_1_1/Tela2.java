@@ -14,6 +14,8 @@ public class Tela2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela2);
 
+        setTitle("Resultado da Conversão");
+
         Intent intent = getIntent();
         int valor = intent.getIntExtra("resposta",0);
 
