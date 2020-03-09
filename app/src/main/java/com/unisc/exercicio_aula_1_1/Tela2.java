@@ -17,8 +17,7 @@ public class Tela2 extends AppCompatActivity {
         setTitle("Resultado da Conversão");
 
         Intent intent = getIntent();
-        int valor = intent.getIntExtra("resposta",0);
-
+        float valor = intent.getFloatExtra("resposta",0);
 
         float conversao = ((valor * 9)/5) + 32;
         Log.d("texto","Resposta: " + conversao);

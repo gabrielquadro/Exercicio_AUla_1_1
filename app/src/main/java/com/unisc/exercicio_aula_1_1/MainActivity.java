@@ -22,10 +22,12 @@ public class MainActivity extends AppCompatActivity {
         Log.d("texto","clciou");
         EditText edit = (EditText) findViewById(R.id.editText);
         Editable resposta = edit.getText();
-        float intResposta = Float.parseFloat(String.valueOf(resposta));
-
+        float floatResposta = 0;
+        if(resposta.length() > 0) {
+            floatResposta = Float.parseFloat(String.valueOf(resposta));
+        }
         Intent intent = new Intent (this, Tela2.class);
-        intent.putExtra("resposta",intResposta);
+        intent.putExtra("resposta",floatResposta);
         startActivity(intent);
 
 
