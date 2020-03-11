@@ -9,11 +9,14 @@
 
     <TextView
         android:id="@+id/textViewTela2"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:editable="false"
         android:enabled="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#121010"
+        android:textColorHighlight="#0C0C0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
